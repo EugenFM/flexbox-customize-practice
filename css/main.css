@@ -139,21 +139,25 @@ body {
     background: #ccccff;
     font-weight: 400;
     font-size: 1.25em;
-    line-height: 1.5em;
+    line-height: 2em;
     border-radius: 15px;
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(3, 35, 244);;
     width: 400px;
     height: 300px;
-    margin: 10px;
-    padding: 0 30px;
+    margin: 15px;
+    padding: 0 40px;
+}
+#skills h2 {
+    width: fit-content;
+    font-weight: 500;
 }
 
   
 #skills-list, ul li {
     display: flex;
-    justify-content: flex-start;
-    align-items:flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 #content p span {
