@@ -97,7 +97,7 @@ textarea {
 
 /*Large Background Image*/
 html {
-  background: url(../img/column.png) no-repeat center center fixed;
+  background: url(../img/sky.jpg) no-repeat center center fixed;
    /* set height to 100% - these are important for allowing content to vertically align */
    height: 100%;
 }
@@ -110,7 +110,8 @@ body {
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  justify-content:space-around;
   align-items: center;
   margin: 0;
   height: 100%;
@@ -145,19 +146,23 @@ body {
     color: rgb(3, 35, 244);;
     width: 400px;
     height: 300px;
-    margin: 15px;
-    padding: 0 40px;
+    margin: 0 15px;
+    padding: 0 30px;
 }
 #skills h2 {
-    width: fit-content;
+    width:auto;
     font-weight: 500;
 }
 
   
-#skills-list, ul li {
+#skills-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:blueviolet;
+    font-weight: 700;
+    list-style: none;
 }
 
 #content p span {
@@ -247,6 +252,23 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 786px) {
+    .wrapper {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
